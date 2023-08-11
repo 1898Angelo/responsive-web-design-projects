@@ -340,6 +340,7 @@ figure {
     justify-content: center;
     gap: 10px 20px;
     font-size: var(--medium-font);
+    padding-bottom: 15px;
 }
 
 #made-by {
