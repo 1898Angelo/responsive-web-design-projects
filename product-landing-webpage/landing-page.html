@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"rel="stylesheet"/>
+</head>
+
+<html lang="en">
+    <body>
+        <svg viewBox="0 0 500 160" class="wave">
+            <path d="M 0,100 C 150,200 350,0 500,150 L 500,00 L 0,0"></path>
+        </svg>
+
+        <!--TOP BAR-->
+        <header class="flex" id="topbar">
+            <div class="flex" id="topbar-wrapper">
+
+                <div class="medium-font" id="topbar-menu">
+                    <div id="mobile-menu-wrapper">
+                        <i class="fa fa-bars" id="menu-button"></i>
+                    </div>
+                </div>
+
+                <div id="brand-wrapper" class="flex small-font">
+                    <img id="topbar-logo" src="https://elinux.org/images/c/cb/Raspberry_Pi_Logo.svg" />
+                    <p id="brand-name">Brand Name</p>
+                </div>
+
+                <nav id="topbar-info-wrapper">
+                    <ul id="topbar-navlist" class="flex nav-list small-font">
+                        <li class="topbar-info">Shop</li>
+                        <li><a class="link" href="#most-popular">Popular</a></li>
+                        <li><a class="link" href="#page-footer">About</a></li>
+                    </ul>
+                </nav>
+
+                <div id="topbar-buttons">
+                    <div id="topbar-buttons-wrapper" class="flex medium-font">
+                        <div class="topbar-button-wrapper" id="search-button-wrapper">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="topbar-button-wrapper" id="shoppingcart-button-wrapper">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!--LANDING PAGE BODY-->
+        <main id="body-content">
+
+            <div id="newsletter-container">
+                <img id="newsletter-gif" src="https://www.raspberrypi.org/app/uploads/2017/05/giphy-1-1.gif"/>
+                <div id="newsletter-textbox">
+                    <h1 id="newsletter-header">Subscribe to our newsletter!</h1>
+                    <article class="small-font">
+                        <p class="newsletter-text">Sign up to receive latest news and developments in the Raspbery Pi world.</p>
+                        <p class="newsletter-text">You'll receive alerts on discount codes and whenever new items are added to our shop.</p>
+                    </article>
+                    <form id="newsletter-form">
+                        <input type="email" id="newsletter-email" class="small-font" placeholder="Email Adress..."/>
+                        <button type="submit" id="newsletter-submit" class="small-font">Subscribe!</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="vid-container">
+                <iframe id="intro-video" src="https://www.youtube-nocookie.com/embed/eZ74x6dVYes?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+
+            <div id="features">
+                <h2 id="our-values" class="h2-header big-font align-right">We Guarantee</h2>
+                <div class="feature">
+                    <i class="fas fa-truck feature-icon"></i>
+                    <div class="feature-text">
+                        <h3 class="medium-font">Fast Shipping</h2>
+                        <p class="small-font">We make sure you recieve your items as soon as possible. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-microchip feature-icon"></i>
+                    <div class="feature-text">
+                        <h3 class="medium-font">Premium Materials</h2>
+                        <p class="small-font">We offer the highest quality products available. This will increase the longevity of your purchase.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check feature-icon"></i>
+                    <div class="feature-text">
+                        <h3 class="medium-font">Quality Assurance</h2>
+                        <p class="small-font">For every purchase you make, we will ensure there are no damages or faults and we will check and test your products before shipping.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="most-sold">
+                <h2 id="most-popular" class="h2-header big-font">Most Popular Products</h2>
+                <div id="products-carrousel" class="carrousel">
+                    <div class="product">
+                        <figure>
+                            <img class="product-photo" src="https://images.prismic.io/rpf-products/3fe7f109-d614-4030-92cd-4bfff10d80aa_Raspberry+Pi+Zero+2+W+Hero+WEB+RES.jpg?auto=compress%2Cformat&fit=max&w=600&h=400&fm=webp" />
+                            <div class="divider"></div>
+                            <figcaption>
+                                <h3 class="h3-header product-header medium-font">Raspberry Pi Zero 2W</h3>
+                                <p class="small-font product-text">Tiny $15 computer.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="product">
+                        <figure>
+                            <img class="product-photo" src="https://images.prismic.io/rpf-products/3a15d4da-46e3-4940-8be6-9fc7d201affe_RPi_4B_FEATURED.jpg?auto=compress%2Cformat&fit=max&w=600&h=400&fm=webp" />
+                            <div class="divider"></div>
+                            <figcaption>
+                                <h3 class="h3-header product-header medium-font">Raspberry Pi 4 Model B</h3>
+                                <p class="small-font product-text">Tiny dual-display desktop computer.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="product">
+                        <figure>
+                            <img class="product-photo" src="https://images.prismic.io/rpf-products/15c25bce-9820-4787-abe8-b6a9815a94c8_4B+DESKTOP+FEATURED.jpg?auto=compress%2Cformat&fit=max&w=600&h=400&fm=webp" />
+                            <div class="divider"></div>
+                            <figcaption>
+                                <h3 class="h3-header product-header medium-font">Raspberry Pi 4 Desktop Kit</h3>
+                                <p class="small-font product-text">Full desktop computer kit - just connect to HDMI display.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="product">
+                        <figure>
+                            <img class="product-photo" src="https://images.prismic.io/rpf-products/c2831d25-216f-4a77-a1ad-45b1019c082e_RPi_400+Featured.jpg?auto=compress%2Cformat&fit=max&w=600&h=400&fm=webp" />
+                            <div class="divider"></div>
+                            <figcaption>
+                                <h3 class="h3-header product-header medium-font">Raspbery Pi 400 Unit</h3>
+                                <p class="small-font product-text">Full desktop computer built into a compact keyboard form.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="product">
+                        <figure>
+                            <img class="product-photo" src="https://images.prismic.io/rpf-products/de8955bf-3a15-4469-9fe9-6959880e123d_ALL+PICOS.jpg?auto=compress%2Cformat&fit=max&w=600&h=400&fm=webp" />
+                            <div class="divider"></div>
+                            <figcaption>
+                                <h3 class="h3-header product-header medium-font">Raspberry Pi Pico Series</h3>
+                                <p class="small-font product-text">Range of powerful microcontroller boards.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="page-footer">
+            <div class="grey-box">
+                <div id="sources" class="footer-box">
+                    <h4 class="medium-font footer-header">Sources</h4>
+                    <div class="divider"></div>
+                    <div class="footer-text">
+                        <a class="link" href="https://product-landing-page.freecodecamp.rocks/">Text from "We Guarantee" section</a>
+                        <a class="link" href="https://www.raspberrypi.com/products/">Raspberry Pi Products</a>
+                        <a class="link" href="https://elinux.org/index.php?title=File:Raspberry_Pi_Logo.svg">Raspberry Pi SVG logo</a>
+                    </div>
+                </div>
+                <div id="about-us" class="footer-box">
+                    <h4 class="medium-font footer-header">About Us</h4>
+                    <div class="divider"></div>
+                    <div class="footer-text">
+                        <p>We specialize in anything Raspberry Pi and Arduino related and have a client-first vision and hope to provide the best customer-support possible.</p>
+                    </div>
+                </div>
+                <div id="contact-us" class="footer-box">
+                    <h4 class="medium-font footer-header">Contact Us</h4>
+                    <div class="divider"></div>
+                    <div class="footer-text">
+                        <p>P.O Box Adress: <span class="d-block">167 Fictional Rd</span></p>
+                        <p>Email Adress: <span class="d-block">Business@Email.com</span></p>
+                    </div>
+                    <div class="social-networks">
+                        <i class="fab fa-twitter social-network"></i>
+                        <i class="fab fa-facebook social-network"></i>
+                        <i class="fab fa-instagram social-network"></i>
+                        <i class="fab fa-youtube social-network"></i>
+                        <i class="fab fa-reddit social-network"></i>
+                        <i class="fab fa-pinterest social-network"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="made-by">
+                <p class="small-spacing big-font">Made by 1898Angelo</p>
+            </div>
+        </footer>
+    </body>    
+</html>

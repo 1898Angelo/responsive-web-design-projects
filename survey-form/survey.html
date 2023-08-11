@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survery Form</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Simple survey form for freeCodeCamp's Survey Form project</p>
+
+    <form class="survey" id="survey-form">  
+      <fieldset>
+        <label for="name" id="name-label">Name<input type="text" id="name" name="name" placeholder="Enter your name"required></input></label>
+        <label for="email" id="email-label">Email<input type="email" id="email" name="email" placeholder="Enter your email" required></input></label>
+        <label for="age" id="number-label">Age (optional)<input type="number" id="number" name="age" placeholder="What's your age?" min=18 max=120 required></input></label>
+        <label>What's your current occupation?
+          <select id="dropdown">
+            <option value="">Select Current Occupation</option>
+            <option value=0>Student</option>
+            <option value=1>Unemployed</option> 
+            <option value=2>Public Sector Employee</option>
+            <option value=3>Private Sector Employee</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p class="inner-p">Do you have experience in the position you're applying for?</p>
+        <label><input type="radio" class="exp-radio" name="experience" value="with-experience"></input> Definetely</label>
+        <label><input type="radio" class="exp-radio" name="experience" value="unsure-experience"></input> Unsure</label>
+        <label><input type="radio" class="exp-radio" name="experience" value="no-experience"></input> No</label>
+      </fieldset>
+
+      <fieldset>
+        <p class="inner-p">Do you have an interest in any of these topics?</p>
+        <label><input type="checkbox" class="int-checkbox" name="interests" value="writing"></input> Writing</label>
+        <label><input type="checkbox" class="int-checkbox" name="interests" value="programming"></input> Programming</label>
+        <label><input type="checkbox" class="int-checkbox" name="interests" value="statistics"></input> Statistics</label>
+        <label><input type="checkbox" class="int-checkbox" name="interests" value="economics"></input> Economics</label>
+      </fieldset>
+
+      <fieldset>
+        <p class="inner-p">Why are you applying for this position?</p>
+        <textarea name="work-experience" rows=5 placeholder="I'm intersted in this position because..."></textarea>
+      </fieldset>
+
+      <div class="button-holder">
+        <button type="submit" value="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

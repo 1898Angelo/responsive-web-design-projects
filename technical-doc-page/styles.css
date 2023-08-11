@@ -1,0 +1,156 @@
+html {
+	box-sizing: border-box;
+}
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+  display: flex;
+  color: rgb(30, 30, 30);
+  background: rgb(220, 220, 220);
+}
+
+.nav-wrapper {
+  height: 100vh;
+  width: 30%;
+  max-width: 330px;
+  padding-top: 160px;
+  background-color: rgba(0, 80, 20, 80%);
+  border-right: min(5px, 0.35vw) solid rgba(10, 10, 10, 40%);
+  color: rgb(180, 180, 180);
+  overflow: hidden;
+}
+
+#navbar {
+    height: calc(100vh - 160px);
+    width: 100%;
+}
+
+.nav-list-container {
+  overflow: scroll;
+  height: 100%
+}
+
+.documentation-wrapper {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  padding: 20px min(60px, 5vw);
+  overflow: hidden;
+}
+
+.documentation-body {
+  height: 100%;
+  width: 100%;
+  max-width: 900px;
+  margin: inherit;
+  overflow: scroll;
+}
+
+.nav-list-container::-webkit-scrollbar, 
+.documentation-body::-webkit-scrollbar {
+  /* Hides scroll bars on IE, Edge and Firefox */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* COSMETICS */
+figcaption,
+span,
+p,
+a,
+h2,
+h3,
+a,
+li,
+code,
+.nav-header {
+  font-size: min(3vw, 24px);
+}
+
+.nav-heading {
+  font-size: min(4.5vw, 24px);
+  text-align: center;
+  padding: 15px;
+  margin: auto;
+  border-bottom: min(5px, 0.35vw) solid rgba(10, 10, 10, 40%);
+}
+
+li {
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
+
+.nav-list-container > ul > li::before {
+    content: "";
+    display: inline-block;
+    margin-left: -5px;
+  }
+
+.nav-list-container::-webkit-scrollbar,
+.documentation-body::-webkit-scrollbar {
+  display: none;
+}
+
+.section-header {
+  font-size: min(5vw, 48px);
+  border-bottom: min(5px, .5vw) solid rgba(10, 10, 10, 40%);
+  margin-bottom: min(30px, 1vw);
+  text-align: center;
+}
+
+.documentation-body > section > article > ul > li {
+  margin-bottom: 15px;
+}
+
+.main-section {
+  margin-bottom: min(10vw, 60px);
+}
+
+code {
+  display: block;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 85%;
+  background-color: rgba(140, 140, 140, 60%);
+  margin: 0 auto;
+}
+
+.inline-code {
+  display: inline-block;
+  border-radius: 0;
+  padding: 0 5px;
+}
+
+.indent {
+  margin-left: 35px;
+}
+
+.in-paragraph {
+  margin: 1em 0;
+}
+
+.nav-link {
+  color: rgb(180, 180, 180);
+}
+
+.nav-link:hover {
+  color: rgb(180, 180, 0);
+}
+
+@media (min-width: 1px) and (max-width: 700px) {
+    .nav-wrapper {
+        min-width: min(130px, 40%);
+    }
+    .documentation-wrapper {
+        min-width: min(300px, 60%);
+    }
+}

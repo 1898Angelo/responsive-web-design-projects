@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  color: rgb(220, 220, 220);
+  background: linear-gradient(90deg, hsl(237, 87%, 27%) 10%, hsl(237, 92%, 15%) 100%);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+h1, 
+#description {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0px;
+}
+
+input,
+textarea, 
+select {
+  width: 100%;
+  min-width: 100%;
+  margin: 0.5rem 0 0 0;
+  min-height: 2rem;
+  color: gray;
+  background: rgb(240, 240, 240);
+  border-radius: 5px
+}
+
+/* form elements */
+
+form {
+  width: 80vw;
+  max-width: 500px;
+  margin: 2em auto;
+  background: rgba(50, 50, 50, 40%);
+  padding: 0.1rem 2.5vw;
+  border-radius: 20px;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 3px solid rgba(50, 50, 50);
+  padding: 0.1em;
+  margin: 0.5em 0.3em;
+}
+
+fieldset:last-of-type{
+  border-bottom: none;
+}
+
+.inner-p  {
+  margin: 0.5em 0px;
+}
+
+.exp-radio,
+.int-checkbox {
+  min-height: unset;
+  min-width: unset;
+  width: unset;
+  margin: 0.1rem 0px 0px 0px;
+}
+
+.button-holder {
+  text-align: center;
+  border: none;
+  margin-bottom: 0.5vh
+}
+
+textarea {
+  margin-top: 0px;
+}
+
+#submit {
+  width: 80%;
+  min-height: 2rem;
+  margin: 1rem auto;
+  color: rgb(220, 220, 220);
+  background: rgba(50, 50, 50);
+  border: none;
+}
