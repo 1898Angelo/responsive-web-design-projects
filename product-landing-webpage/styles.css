@@ -309,7 +309,6 @@ figure {
     display: flex;
     flex-direction: column;
     width: 33.33%;
-    padding: 0px 5px;
 }
 
 .footer-header {
@@ -329,17 +328,18 @@ figure {
 }
 
 .footer-text > p,
-.footer-text > span {
+.footer-text > span,
+.footer-text > a {
     margin: 0;
+    padding: 0;
 }
 
 .social-networks {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px 20px;
     font-size: var(--medium-font);
-    padding-bottom: 15px;
 }
 
 #made-by {
@@ -452,6 +452,11 @@ figure {
     }
 
     .social-networks {
-        gap: 10px;
+        gap: 5px 0;
+        font-size: var(--small-font);
+    }
+
+    .social-network {
+        padding: 2px 3px;
     }
 }
