@@ -4,6 +4,6 @@ Just to "show off" the projects I've made from the Responsive Web Design course 
 
 The projects I've made can be visualized in my [CodePen's collection](https://codepen.io/collection/rxemqV)
 
-![1](https://github.com/1898Angelo/responsive-web-design-projects/assets/123282394/b5d7d84b-b881-4443-bd85-f79ea4e35b73)
+![1](https://github.com/1898Angelo/responsive-web-design-projects/assets/123282394/d9c75f45-daa1-4d64-b1c7-959a0aca2360)
 
-![Animation1](https://github.com/1898Angelo/responsive-web-design-projects/assets/123282394/b9a80739-4492-4ba9-883f-5f7aa359b0e9)
+![Animation1](https://github.com/1898Angelo/responsive-web-design-projects/assets/123282394/12579cde-c785-4a87-b50c-0abbffe9196c)
