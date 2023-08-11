@@ -1,6 +1,6 @@
 # FCC Responsive Web Design Projects
 
-Just to "show off" the projects I've made from the Responsive Web Design course to make dynamic webpagese that adjust accordingly to the user's viewport size. The course focuses on teaching HTML and CSS and how to design responsive webpages from zero, no frameworks and no JavaScript.
+Just to "show off" the projects I've made from freeCodeCamp's Responsive Web Design course. The course focuses on teaching HTML and CSS and how to design responsive webpages from zero, no frameworks and no JavaScript.
 
 The projects I've made can be visualized in my [CodePen's collection](https://codepen.io/collection/rxemqV)
 
