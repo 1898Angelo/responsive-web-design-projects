@@ -134,6 +134,7 @@ FLEBOX IN THE TOP BAR**** */
     display: grid;
     grid-template-columns: 1fr 80% 1fr;
     gap: 30px 0;
+    margin-bottom: 30px;
 }
 
 /* ***NEWSLETTER*** */
@@ -200,7 +201,7 @@ FLEBOX IN THE TOP BAR**** */
 /* ***VIDEO CONTAINER*** */
 #vid-container {
     grid-column: 2/3;
-    height: 40vh;
+    height: 60vh;
     order: 999;
 }
 
