@@ -1,8 +1,8 @@
 # FCC Responsive Web Design Projects
 
-Just to show the projects I've made for freeCodeCamp's Responsive Web Design course. The course focuses on teaching HTML and CSS and how to design responsive webpages from zero, no frameworks and no JavaScript.
+Just to show the projects I made for freeCodeCamp's Responsive Web Design course. The course focuses on teaching HTML5, CSS3 and how to design responsive webpages from zero, no frameworks and no JavaScript.
 
-The projects I've made can be viewed on my [CodePen's collection](https://codepen.io/collection/rxemqV)
+The projects can be seen on my [CodePen's collection](https://codepen.io/collection/rxemqV)
 
 ## Portfolio Project
 
