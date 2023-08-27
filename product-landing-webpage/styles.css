@@ -33,19 +33,14 @@ html {
 }
 
 body {
+    padding: 0;
     margin: 0;
     height: 100vh;
-    width: 100vw;
-    min-width: 300px;
+    width: 100%;
     font-family: Raleway, sans-serif;
-    overflow-x: hidden;
     overflow-y: scroll;
     background: rgb(0, 0, 60);
     color: rgb(230, 230, 230);
-
-    display: flex;
-    flex-direction: column;
-    gap: 30px 0;
 }
 
 body::-webkit-scrollbar {
@@ -62,44 +57,38 @@ body::-webkit-scrollbar {
 }
 
 
+/* I have to remove the inner header wrapper */
+
 /* TOP BAR */
-#topbar {
-    height: 4%;
+#header {
+    height: 40px;
     width: inherit;
     padding: 0 min(150px, 8vw);
     background-color: var(--bars-color);
 }
 
 /* ****MOBILE MENU***** */
-#topbar-menu {
+#menu-smartphone{
     display: none;
     height: inherit;
     width: 33.33%;
 }
 
-/* ******************* */
-
-#topbar-wrapper {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-#brand-wrapper,
-#topbar-info-wrapper,
-#topbar-buttons {
+#brand-container,
+#nav-bar,
+#topbar-buttons-container {
     height: inherit;
     width: 33.33%;
 }
 
-#brand-wrapper,
+#brand-container,
 #topbar-navlist,
-#topbar-buttons-wrapper {
+#topbar-buttons-container {
     align-items: center;
 }
 
 #topbar-navlist,
-#topbar-buttons-wrapper {
+#topbar-buttons-container {
     gap: 10px;
 }
 
@@ -107,7 +96,7 @@ body::-webkit-scrollbar {
 INSIDE THE THREE
 FLEBOX IN THE TOP BAR**** */
 
-#brand-wrapper {
+#brand-container {
     column-gap: 0.1vw;
     justify-content: flex-start;
 }
@@ -119,14 +108,14 @@ FLEBOX IN THE TOP BAR**** */
     padding-inline-start: 0;
 }
 
-#topbar-buttons-wrapper {
+#topbar-buttons-container {
     height: inherit;
     justify-content: flex-end;
 }
 
 /* ********************** */
 
-#topbar-logo {
+#header-img {
     height: 90%;
 }
 
@@ -139,7 +128,7 @@ FLEBOX IN THE TOP BAR**** */
 /* BODY */
 #body-content {
     width: inherit;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0px auto;
 
     display: grid;
@@ -167,7 +156,7 @@ FLEBOX IN THE TOP BAR**** */
     gap: 10px 0;
 }
 
-#newsletter-form {
+#form {
     margin: 0;
     flex-grow: 1;
     display: flex;
@@ -186,25 +175,25 @@ FLEBOX IN THE TOP BAR**** */
     text-align: left;
 }
 
-#newsletter-email,
-#newsletter-submit {
+#email,
+#submit {
     width: 100%;
     padding: 5px 0;
     border-radius: 4px;
 }
 
-#newsletter-email {
+#email {
     border: 1px solid white;
 }
 
-#newsletter-submit {
+#submit {
     margin-top: 5px;
     background-color: black;
     color: white;
     border: 0;
 }
 
-#newsletter-submit:hover {
+#submit:hover {
     filter: invert(1)
 }
 
@@ -215,7 +204,7 @@ FLEBOX IN THE TOP BAR**** */
     order: 999;
 }
 
-#intro-video {
+#video {
     height: inherit;
     width: 100%;
 }
@@ -401,24 +390,23 @@ figure {
     text-align: center;
 }
 
+.nav-link,
 .link {
     color: white;
     text-decoration: none;
 }
 
-#mobile-menu-wrapper:hover,
-.topbar-button-wrapper:hover,
-.topbar-info:hover,
-.social-network:hover,
+#menu-button:hover,
+.icon:hover,
+.nav-link:hover,
 .link:hover {
     background-color: black;
     filter: invert(1)
 }
 
-#mobile-menu-wrapper,
-.topbar-button-wrapper,
-.social-network,
-.topbar-info,
+#menu-button,
+.icon,
+.nav-link,
 .link {
     padding: 2px 5px;
     border-radius: 5px;
@@ -426,20 +414,20 @@ figure {
 
 /* QUERIES */
 @media (max-width: 600px) {
-    #topbar {
+    #header {
         position: sticky;
         top: 0;
         box-shadow: 0 0 10px 5px black;
         padding: 0;
     }
 
-    #topbar-menu {
+    #menu-smartphone {
         display: flex;
     }
 
-    #topbar-menu,
-    #brand-wrapper,
-    #topbar-buttons-wrapper {
+    #menu-smartphone,
+    #brand-container,
+    #topbar-buttons-container {
         justify-content: center;
         align-items: center;
     }
@@ -448,7 +436,7 @@ figure {
         display: none;
     }
     
-    #topbar-info-wrapper {
+    #nav-bar {
         display: none;
     }
 
@@ -457,7 +445,14 @@ figure {
         font-size: var(--small-font);
     }
 
-    .social-network {
+    .icon {
         padding: 2px 3px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #header-img {
+        height: 70%;
     }
 }

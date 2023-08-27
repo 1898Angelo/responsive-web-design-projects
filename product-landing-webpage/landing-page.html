@@ -7,47 +7,34 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
         <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"rel="stylesheet"/>
     </head>
-    
+
     <body>
         <svg viewBox="0 0 500 160" class="wave">
             <path d="M 0,100 C 150,200 350,0 500,150 L 500,00 L 0,0"></path>
         </svg>
 
         <!--TOP BAR-->
-        <header class="flex" id="topbar">
-            <div class="flex" id="topbar-wrapper">
+        <header class="flex" id="header">
 
-                <div class="medium-font" id="topbar-menu">
-                    <div id="mobile-menu-wrapper">
-                        <i class="fa fa-bars" id="menu-button"></i>
-                    </div>
-                </div>
-
-                <div id="brand-wrapper" class="flex small-font">
-                    <img id="topbar-logo" src="https://elinux.org/images/c/cb/Raspberry_Pi_Logo.svg" />
-                    <p id="brand-name">Brand Name</p>
-                </div>
-
-                <nav id="topbar-info-wrapper">
-                    <ul id="topbar-navlist" class="flex nav-list small-font">
-                        <li class="topbar-info">Shop</li>
-                        <li><a class="link" href="#most-popular">Popular</a></li>
-                        <li><a class="link" href="#page-footer">About</a></li>
-                    </ul>
-                </nav>
-
-                <div id="topbar-buttons">
-                    <div id="topbar-buttons-wrapper" class="flex medium-font">
-                        <div class="topbar-button-wrapper" id="search-button-wrapper">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <div class="topbar-button-wrapper" id="shoppingcart-button-wrapper">
-                            <i class="fa fa-shopping-cart"></i>
-                        </div>
-                    </div>
-                </div>
-
+            <div id="menu-smartphone">
+                <i class="fa fa-bars" id="menu-button"></i>
             </div>
+            <div id="brand-container" class="flex small-font">
+                <img id="header-img" src="https://elinux.org/images/c/cb/Raspberry_Pi_Logo.svg" />
+                <p id="brand-name">Brand Name</p>
+            </div>
+            <nav id="nav-bar">
+                <ul id="topbar-navlist" class="flex nav-list small-font">
+                    <a class="nav-link" href="#most-sold">Shop</a>
+                    <a class="nav-link" href="#most-popular">Popular</a>
+                    <a class="nav-link" href="#page-footer">About</a>
+                </ul>
+            </nav>
+            <div id="topbar-buttons-container" class="flex medium-font">
+                <i class="icon fa fa-search"></i>
+                <i class="icon fa fa-shopping-cart"></i>
+            </div>
+
         </header>
 
         <!--LANDING PAGE BODY-->
@@ -61,15 +48,15 @@
                         <p class="newsletter-text">Sign up to receive latest news and developments in the Raspbery Pi world.</p>
                         <p class="newsletter-text">You'll receive alerts on discount codes and whenever new items are added to our shop.</p>
                     </article>
-                    <form id="newsletter-form">
-                        <input type="email" id="newsletter-email" class="small-font" placeholder="Email Adress..."/>
-                        <button type="submit" id="newsletter-submit" class="small-font">Subscribe!</button>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input id="email" type="email" class="small-font" name="email" placeholder="Email Adress..." />
+                        <input id="submit" type="submit" class="small-font"Subscribe! />
                     </form>
                 </div>
             </div>
 
             <div id="vid-container">
-                <iframe id="intro-video" src="https://www.youtube-nocookie.com/embed/eZ74x6dVYes?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+                <iframe id="video" src="https://www.youtube-nocookie.com/embed/eZ74x6dVYes?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
             </div>
 
             <div id="features">
@@ -180,12 +167,12 @@
                         <p>Email Adress: <span class="d-block">Business@Email.com</span></p>
                     </div>
                     <div class="social-networks">
-                        <i class="fab fa-twitter social-network"></i>
-                        <i class="fab fa-facebook social-network"></i>
-                        <i class="fab fa-instagram social-network"></i>
-                        <i class="fab fa-youtube social-network"></i>
-                        <i class="fab fa-reddit social-network"></i>
-                        <i class="fab fa-pinterest social-network"></i>
+                        <i class="icon fab fa-twitter"></i>
+                        <i class="icon fab fa-facebook"></i>
+                        <i class="icon fab fa-instagram "></i>
+                        <i class="icon fab fa-youtube"></i>
+                        <i class="icon fab fa-reddit"></i>
+                        <i class="icon fab fa-pinterest"></i>
                     </div>
                 </div>
             </div>
