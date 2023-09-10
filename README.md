@@ -2,7 +2,7 @@
 
 Just to show the projects I made for freeCodeCamp's Responsive Web Design course. The course focuses on teaching HTML5, CSS3 and how to design responsive webpages from zero, no frameworks and no JavaScript.
 
-The projects can be seen on my [CodePen's collection](https://codepen.io/collection/rxemqV) or by clicking on my [certification (automatically) issued by freeCodeCamp](https://www.freecodecamp.org/certification/1898Angelo/responsive-web-design)
+The projects can be visualized on my [CodePen's collection](https://codepen.io/collection/rxemqV) or by clicking on my [certification (automatically) issued by freeCodeCamp](https://www.freecodecamp.org/certification/1898Angelo/responsive-web-design)
 
 ## Portfolio Project
 
